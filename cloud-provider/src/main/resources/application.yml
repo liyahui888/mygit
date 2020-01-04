@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: cloud-provider
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123456@localhost:8080/eureka/      #服务注册中信地址，含有BASIC认证的用户名和密码
+  instance:
+    prefer-ip-address: true         #将IP注册到服务注册中心
+
+#放开所有节点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
