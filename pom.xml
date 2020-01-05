@@ -16,6 +16,7 @@
     </properties>
     <modules>
         <module>cloud-discovery</module>
+        <module>cloud-discovery-two</module>
         <module>cloud-provider</module>
         <module>cloud-client</module>
     </modules>

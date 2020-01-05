@@ -9,6 +9,7 @@
         <module name="cloud-client" />
         <module name="cloud-provider" />
         <module name="cloud-discovery" />
+        <module name="cloud-discovery-two" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-client" options="-parameters" />
       <module name="cloud-discovery" options="-parameters" />
+      <module name="cloud-discovery-two" options="-parameters" />
       <module name="cloud-provider" options="-parameters" />
       <module name="springcloud" options="-parameters" />
     </option>

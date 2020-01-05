@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/UserFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +43,7 @@
   <component name="ProjectId" id="1Vv9t9GaIsg6B1BZp51zX1xyF0Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -53,6 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,6 +69,9 @@
       <recent name="com.cloud.provider.entity" />
       <recent name="com.cloud.provider.controller" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\springcloud" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -82,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudClientApplication">
+  <component name="RunManager" selected="Spring Boot.CloudDiscoveryApplication">
     <configuration name="CloudDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cloud.discovery.CloudDiscoveryApplication" />
       <module name="cloud-discovery" />
@@ -106,6 +109,23 @@
     <configuration name="CloudDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-discovery" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.discovery.CloudDiscoveryApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=server1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudDiscoveryApplicationTwo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-discovery-two" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.discovery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.discovery.CloudDiscoveryApplicationTwo" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=server2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,8 +137,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CloudDiscoveryApplication" />
+      <item itemvalue="Spring Boot.CloudClientApplication" />
+      <item itemvalue="Spring Boot.CloudDiscoveryApplication" />
+      <item itemvalue="Spring Boot.CloudProviderApplication" />
+      <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
         <item itemvalue="Application.CloudDiscoveryApplication" />
       </list>
     </recent_temporary>
