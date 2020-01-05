@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudDiscoveryApplication">
+  <component name="RunManager" selected="Spring Boot.CloudProviderApplication">
     <configuration name="CloudDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cloud.discovery.CloudDiscoveryApplication" />
       <module name="cloud-discovery" />
@@ -171,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578143939371</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="eureka集群">
+      <created>1578231212612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578231212612</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="忽略CSRF验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="忽略CSRF验证" />
+    <MESSAGE value="eureka集群" />
+    <option name="LAST_COMMIT_MESSAGE" value="eureka集群" />
   </component>
 </project>
