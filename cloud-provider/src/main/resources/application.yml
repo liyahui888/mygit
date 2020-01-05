@@ -1,8 +1,8 @@
 server:
-  port: 8081
+    port: 8081
 spring:
   application:
-    name: cloud-provider
+           name: cloud-provider
 eureka:
   client:
     serviceUrl:
