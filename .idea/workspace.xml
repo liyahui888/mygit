@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/spring-cloud.iml" afterDir="false" />
+    <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="feign网关实现">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery-two/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +28,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\Administrator\.m2\repository" />
         <option name="mavenHome" value="D:/Program Files (x86)/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Program Files (x86)\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -84,7 +80,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\springcloud" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudClientApplication">
+  <component name="RunManager" selected="Spring Boot.CloudZuulApplication">
     <configuration name="CloudDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cloud.discovery.CloudDiscoveryApplication" />
       <module name="cloud-discovery" />
@@ -143,6 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CloudZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.zuul.CloudZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CloudDiscoveryApplication" />
       <item itemvalue="Spring Boot.CloudClientApplication" />
@@ -150,6 +153,7 @@
       <item itemvalue="Spring Boot.CloudProviderApplication" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
       <item itemvalue="Spring Boot.CloudProviderTwoApplication" />
+      <item itemvalue="Spring Boot.CloudZuulApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -183,7 +187,7 @@
       <workItem from="1578122915963" duration="9458000" />
       <workItem from="1578138285544" duration="12256000" />
       <workItem from="1578301109266" duration="7250000" />
-      <workItem from="1578366882826" duration="6279000" />
+      <workItem from="1578366882826" duration="18345000" />
     </task>
     <task id="LOCAL-00001" summary="忽略CSRF验证">
       <created>1578143939370</created>
@@ -199,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578231212612</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feign负载均衡实现">
+      <created>1578378146287</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578378146287</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,64 +232,81 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="忽略CSRF验证" />
     <MESSAGE value="eureka集群" />
-    <option name="LAST_COMMIT_MESSAGE" value="eureka集群" />
+    <MESSAGE value="feign负载均衡实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="feign负载均衡实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578374793753">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1578374793753" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1578389299503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578389299503" />
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578366054586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1578366054586" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1578301912379">
+    <state x="181" y="0" key="CommitChangelistDialog2" timestamp="1578390836875">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578301912379" />
-    <state width="1322" height="231" key="GridCell.Tab.0.bottom" timestamp="1578377753537">
+    <state x="181" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578390836875" />
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1578383711559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578377753537" />
-    <state width="1322" height="231" key="GridCell.Tab.0.center" timestamp="1578377753536">
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578383711559" />
+    <state width="1322" height="209" key="GridCell.Tab.0.bottom" timestamp="1578390667733">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578377753536" />
-    <state width="1322" height="231" key="GridCell.Tab.0.left" timestamp="1578377753535">
+    <state width="1322" height="209" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578390667733" />
+    <state width="1322" height="209" key="GridCell.Tab.0.center" timestamp="1578390667732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578377753535" />
-    <state width="1322" height="231" key="GridCell.Tab.0.right" timestamp="1578377753537">
+    <state width="1322" height="209" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578390667732" />
+    <state width="1322" height="209" key="GridCell.Tab.0.left" timestamp="1578390667732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578377753537" />
-    <state width="1322" height="231" key="GridCell.Tab.1.bottom" timestamp="1578377753539">
+    <state width="1322" height="209" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578390667732" />
+    <state width="1322" height="209" key="GridCell.Tab.0.right" timestamp="1578390667732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578377753539" />
-    <state width="1322" height="231" key="GridCell.Tab.1.center" timestamp="1578377753538">
+    <state width="1322" height="209" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578390667732" />
+    <state width="1322" height="209" key="GridCell.Tab.1.bottom" timestamp="1578390667727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578377753538" />
-    <state width="1322" height="231" key="GridCell.Tab.1.left" timestamp="1578377753538">
+    <state width="1322" height="209" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578390667727" />
+    <state width="1322" height="209" key="GridCell.Tab.1.center" timestamp="1578390667726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578377753538" />
-    <state width="1322" height="231" key="GridCell.Tab.1.right" timestamp="1578377753538">
+    <state width="1322" height="209" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578390667726" />
+    <state width="1322" height="209" key="GridCell.Tab.1.left" timestamp="1578390667726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578377753538" />
+    <state width="1322" height="209" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578390667726" />
+    <state width="1322" height="209" key="GridCell.Tab.1.right" timestamp="1578390667727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="209" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578390667727" />
     <state x="338" y="76" key="RollbackChangesDialog" timestamp="1578365741640">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="338" y="76" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578365741640" />
-    <state x="186" y="0" key="SettingsEditor" timestamp="1578365687251">
+    <state x="186" y="0" key="SettingsEditor" timestamp="1578383742423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578365687251" />
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578383742423" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578390858988">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578390858988" />
     <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1578366896457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578366896457" />
+    <state x="104" y="61" key="new project wizard" timestamp="1578379868750">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="104" y="61" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1578379868750" />
   </component>
 </project>

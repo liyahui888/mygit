@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-client" />
-        <module name="cloud-provider" />
-        <module name="cloud-discovery" />
-        <module name="cloud-provider-two" />
+        <module name="cloud-zuul" />
         <module name="cloud-discovery-two" />
+        <module name="cloud-provider-two" />
+        <module name="cloud-discovery" />
+        <module name="cloud-provider" />
+        <module name="cloud-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="cloud-provider" options="-parameters" />
       <module name="cloud-provider (1)" options="-parameters" />
       <module name="cloud-provider-two" options="-parameters" />
+      <module name="cloud-zuul" options="-parameters" />
       <module name="springcloud" options="-parameters" />
     </option>
   </component>

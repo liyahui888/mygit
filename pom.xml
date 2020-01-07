@@ -20,6 +20,7 @@
         <module>cloud-provider</module>
         <module>cloud-provider-two</module>
         <module>cloud-client</module>
+        <module>cloud-zuul</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

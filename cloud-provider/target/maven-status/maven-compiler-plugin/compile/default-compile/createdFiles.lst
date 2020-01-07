@@ -1,0 +1,3 @@
+com\cloud\provider\controller\UserController.class
+com\cloud\provider\CloudProviderApplication.class
+com\cloud\provider\entity\User.class
