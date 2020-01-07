@@ -9,9 +9,13 @@
         <module name="cloud-client" />
         <module name="cloud-provider" />
         <module name="cloud-discovery" />
+        <module name="cloud-provider-two" />
         <module name="cloud-discovery-two" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-provider (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -19,6 +23,8 @@
       <module name="cloud-discovery" options="-parameters" />
       <module name="cloud-discovery-two" options="-parameters" />
       <module name="cloud-provider" options="-parameters" />
+      <module name="cloud-provider (1)" options="-parameters" />
+      <module name="cloud-provider-two" options="-parameters" />
       <module name="springcloud" options="-parameters" />
     </option>
   </component>

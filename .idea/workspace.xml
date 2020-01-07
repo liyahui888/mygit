@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/spring-cloud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery-two/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,9 +34,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\Maven\repository" />
-        <option name="mavenHome" value="D:/Program Files/apache-maven-3.2.5" />
-        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.2.5\conf\settings.xml" />
+        <option name="mavenHome" value="D:/Program Files (x86)/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -40,12 +46,18 @@
   </component>
   <component name="ProjectId" id="1Vv9t9GaIsg6B1BZp51zX1xyF0Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -60,7 +72,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -68,22 +80,11 @@
       <recent name="com.cloud.provider.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\spring-cloud" />
       <recent name="C:\Users\Administrator\IdeaProjects\springcloud" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.CloudProviderApplication">
+  <component name="RunManager" selected="Spring Boot.CloudClientApplication">
     <configuration name="CloudDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cloud.discovery.CloudDiscoveryApplication" />
       <module name="cloud-discovery" />
@@ -135,12 +136,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CloudProviderTwoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-provider-two" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.provider.CloudProviderTwoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CloudDiscoveryApplication" />
       <item itemvalue="Spring Boot.CloudClientApplication" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplication" />
       <item itemvalue="Spring Boot.CloudProviderApplication" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
+      <item itemvalue="Spring Boot.CloudProviderTwoApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -148,6 +157,18 @@
         <item itemvalue="Application.CloudDiscoveryApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -161,6 +182,8 @@
       <updated>1578122913202</updated>
       <workItem from="1578122915963" duration="9458000" />
       <workItem from="1578138285544" duration="12256000" />
+      <workItem from="1578301109266" duration="7250000" />
+      <workItem from="1578366882826" duration="6279000" />
     </task>
     <task id="LOCAL-00001" summary="忽略CSRF验证">
       <created>1578143939370</created>
@@ -187,7 +210,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -197,5 +222,63 @@
     <MESSAGE value="忽略CSRF验证" />
     <MESSAGE value="eureka集群" />
     <option name="LAST_COMMIT_MESSAGE" value="eureka集群" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578374793753">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1578374793753" />
+    <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578366054586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1578366054586" />
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1578301912379">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578301912379" />
+    <state width="1322" height="231" key="GridCell.Tab.0.bottom" timestamp="1578377753537">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578377753537" />
+    <state width="1322" height="231" key="GridCell.Tab.0.center" timestamp="1578377753536">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578377753536" />
+    <state width="1322" height="231" key="GridCell.Tab.0.left" timestamp="1578377753535">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578377753535" />
+    <state width="1322" height="231" key="GridCell.Tab.0.right" timestamp="1578377753537">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578377753537" />
+    <state width="1322" height="231" key="GridCell.Tab.1.bottom" timestamp="1578377753539">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578377753539" />
+    <state width="1322" height="231" key="GridCell.Tab.1.center" timestamp="1578377753538">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578377753538" />
+    <state width="1322" height="231" key="GridCell.Tab.1.left" timestamp="1578377753538">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578377753538" />
+    <state width="1322" height="231" key="GridCell.Tab.1.right" timestamp="1578377753538">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="231" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578377753538" />
+    <state x="338" y="76" key="RollbackChangesDialog" timestamp="1578365741640">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="338" y="76" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578365741640" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1578365687251">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578365687251" />
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1578366896457">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578366896457" />
   </component>
 </project>

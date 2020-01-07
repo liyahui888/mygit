@@ -3,11 +3,19 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-discovery" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-discovery-two" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-discovery-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-discovery-two/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-discovery-two/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-discovery/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-discovery/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/cloud-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-two/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
