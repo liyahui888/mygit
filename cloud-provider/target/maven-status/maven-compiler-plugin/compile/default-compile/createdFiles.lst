@@ -1,3 +1,6 @@
 com\cloud\provider\controller\UserController.class
+com\cloud\provider\service\UserService.class
 com\cloud\provider\CloudProviderApplication.class
-com\cloud\provider\entity\User.class
+com\cloud\provider\service\impl\UserServiceImpl.class
+com\cloud\provider\mapper\UserMapper.class
+com\cloud\provider\entity\UserEntity.class

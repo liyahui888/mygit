@@ -3,6 +3,21 @@ server:
 spring:
   application:
            name: cloud-provider
+  datasource:
+           username: root
+           password: root
+           url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL
+           driver-class-name: com.mysql.jdbc.Driver
+           hikari:
+             minimum-idle: 5
+             maximum-pool-size: 15
+             auto-commit: true
+             idle-timeout: 30000
+             pool-name: HikariCP
+             max-lifetime: 1800000
+             connection-timeout: 30000
+             connection-test-query: SELECT 1
+
 eureka:
   client:
     serviceUrl:
@@ -17,3 +32,7 @@ management:
       exposure:
         include: '*'
 
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+  typeAliasesPackage: com.cloud.provider.entity

@@ -2,17 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/FeignFallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/FeignFallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/UserFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/UserFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/FeignFallBack.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/FeignFallBack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/UserFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/UserFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/CloudProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/CloudProviderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/CloudProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/CloudProviderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/MyFallbackProvider$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/MyFallbackProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +67,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1Vv9t9GaIsg6B1BZp51zX1xyF0Z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -63,36 +87,69 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-client/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-provider/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cloud.client.user.entity" />
       <recent name="com.cloud.provider.entity" />
       <recent name="com.cloud.provider.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\springcloud\cloud-provider\src\main\resources" />
       <recent name="C:\Users\Administrator\IdeaProjects\spring-cloud\cloud-client\src\main\resources" />
       <recent name="C:\Users\Administrator\IdeaProjects\spring-cloud" />
       <recent name="C:\Users\Administrator\IdeaProjects\springcloud" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudClientApplication">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -U idea:idea compile" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CloudZuulApplication">
     <configuration name="CloudDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cloud.discovery.CloudDiscoveryApplication" />
       <module name="cloud-discovery" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cloud.discovery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudZuulApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cloud.zuul.CloudZuulApplication" />
+      <module name="cloud-zuul" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.zuul.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,29 +221,19 @@
       <item itemvalue="Spring Boot.CloudClientApplication" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplication" />
       <item itemvalue="Spring Boot.CloudProviderApplication" />
-      <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
       <item itemvalue="Spring Boot.CloudProviderTwoApplication" />
       <item itemvalue="Spring Boot.CloudZuulApplication" />
       <item itemvalue="Spring Boot.CloudConifgApplication" />
+      <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
+      <item itemvalue="Application.CloudZuulApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CloudZuulApplication" />
         <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
         <item itemvalue="Application.CloudDiscoveryApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -258,6 +305,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="忽略CSRF验证" />
     <MESSAGE value="eureka集群" />
     <MESSAGE value="feign负载均衡实现" />
