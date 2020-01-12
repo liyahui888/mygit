@@ -72,4 +72,15 @@ public class UserController {
         logger.info("查询结果：{}", s);
         return user;
     }
+
+
+    @GetMapping("/testc")
+    public List<UserEntity> testc() throws Exception {
+        logger.info("testc");
+        List<UserEntity> user = userService.testc();
+        ObjectMapper om = new ObjectMapper();
+        String s = om.writeValueAsString(user);
+        logger.info("查询结果：{}", s);
+        return user;
+    }
 }

@@ -3,6 +3,8 @@ package com.cloud.provider.service.impl;
 import com.cloud.provider.entity.UserEntity;
 import com.cloud.provider.mapper.UserMapper;
 import com.cloud.provider.service.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.collect.Lists;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,9 +17,7 @@ import org.springframework.util.concurrent.ListenableFuture;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.Future;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.*;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -110,7 +110,39 @@ public class UserServiceImpl implements UserService {
         return new AsyncResult<>(list);
     }
 
+    public  List testc() throws Exception{
+        int count = userMapper.count();
+        int pageSize = 10;
+        int pageCount = (count + pageSize - 1)/pageSize;
+        logger.info("共计：{}页，共计：{}条数据",pageCount,count);
+        List data = new ArrayList<>();
+        ExecutorService service = Executors.newFixedThreadPool(5);
+        BlockingQueue<Future<List>> queue = new LinkedBlockingQueue<Future<List>>();
+        for (int i = 1; i <=pageCount; i++) {
+            Integer offset = (i - 1) * pageSize;
+            Future<List> future = service.submit(getdt(offset, pageSize));
+            ObjectMapper om = new ObjectMapper();
+            String s = om.writeValueAsString(future.get());
+            logger.info("当前线程：{}，查询第：{}页，查询结果：{}",Thread.currentThread().getName(),i,s);
+            queue.add(future);
+        }
+        int queueSize = queue.size();
+        for (int i = 0; i < queueSize; i++) {
+            List list = queue.take().get();
+            data.addAll(list);
+        }
+        service.shutdown();
+        return  data;
+    }
 
-
+    private Callable<List> getdt(int offset,int pageSize) {
+        Callable<List> callable = new Callable<List>() {
+            public List call() throws Exception {
+                List<UserEntity> list = userMapper.findByPage(offset, pageSize);
+                return list;
+            }
+        };
+        return callable;
+    }
 
 }

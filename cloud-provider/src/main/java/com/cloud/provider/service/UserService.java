@@ -25,4 +25,6 @@ public interface UserService {
 
 
     List<UserEntity> findAsync( ) throws Exception;
+
+    List testc() throws Exception;
 }
