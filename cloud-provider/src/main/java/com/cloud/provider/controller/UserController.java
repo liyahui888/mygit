@@ -2,7 +2,7 @@ package com.cloud.provider.controller;
 
 import com.cloud.provider.entity.UserEntity;
 import com.cloud.provider.service.UserService;
-import org.junit.jupiter.api.Test;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,5 +60,16 @@ public class UserController {
         }
         long end = System.currentTimeMillis();
         System.out.println("任务全部完成，总耗时：" + (end - start) + "毫秒");
+    }
+
+
+    @GetMapping("/findAsync")
+    public List<UserEntity> findAsync() throws Exception {
+        logger.info("异步查询接口");
+        List<UserEntity> user = userService.findAsync();
+        ObjectMapper om = new ObjectMapper();
+        String s = om.writeValueAsString(user);
+        logger.info("查询结果：{}", s);
+        return user;
     }
 }

@@ -17,6 +17,15 @@
         FROM user
     </select>
 
+    <select id="findByPage" resultMap="BaseResultMap">
+        select * from user
+        LIMIT #{offset},#{pageSize};
+    </select>
+
+    <select id="count" resultType="INTEGER">
+        select count(1) from user
+    </select>
+
     <select id="getOne" parameterType="java.lang.Long" resultMap="BaseResultMap" >
         SELECT
         <include refid="Base_Column_List" />

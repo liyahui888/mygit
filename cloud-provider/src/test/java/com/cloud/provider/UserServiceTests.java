@@ -1,5 +1,6 @@
 package com.cloud.provider;
 
+import com.cloud.provider.controller.UserController;
 import com.cloud.provider.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -13,7 +14,7 @@ import java.util.concurrent.ExecutionException;
 @SpringBootTest
 class UserServiceTests {
 
-    private  final Logger logger = LoggerFactory.getLogger(UserServiceTests.class);
+    private static Logger logger = LoggerFactory.getLogger(UserServiceTests.class);
 
     @Autowired
     private UserService userService;

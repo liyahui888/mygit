@@ -2,35 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/config/BeanConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/UserServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/test-classes/com/cloud/client/CloudClientApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-two/src/main/java/com/cloud/provider/CloudProviderTwoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-two/src/main/java/com/cloud/provider/CloudProviderTwoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/CloudProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/CloudProviderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/CloudClientApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/FeignFallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/UserFeignClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/classes/com/cloud/discovery/CloudDiscoveryApplicationTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/classes/com/cloud/discovery/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/classes/com/cloud/discovery/CloudDiscoveryApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/classes/com/cloud/discovery/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/classes/com/cloud/provider/CloudProviderTwoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/classes/com/cloud/provider/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/classes/com/cloud/provider/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/CloudProviderApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/CloudProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/CloudProviderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/UserServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/UserServiceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/test-classes/com/cloud/zuul/CloudZuulApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/CloudZuulApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.CloudProviderApplication">
     <configuration name="UserControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cloud-provider" />
       <extension name="coverage">
@@ -297,7 +303,7 @@
       <workItem from="1578138285544" duration="12256000" />
       <workItem from="1578301109266" duration="7250000" />
       <workItem from="1578366882826" duration="29545000" />
-      <workItem from="1578807346802" duration="11254000" />
+      <workItem from="1578807346802" duration="18411000" />
     </task>
     <task id="LOCAL-00001" summary="忽略CSRF验证">
       <created>1578143939370</created>
@@ -348,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578816382365</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="配置线程池">
+      <created>1578824623840</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578824623840</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +388,8 @@
     <MESSAGE value="feign网关实现" />
     <MESSAGE value="整合mybatis" />
     <MESSAGE value="改为老的驱动，否则有警告" />
-    <option name="LAST_COMMIT_MESSAGE" value="改为老的驱动，否则有警告" />
+    <MESSAGE value="配置线程池" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置线程池" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578374793753">

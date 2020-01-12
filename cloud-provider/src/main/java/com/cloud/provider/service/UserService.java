@@ -22,4 +22,7 @@ public interface UserService {
     Future<String> doTaskTwo() throws Exception;
 
     Future<String> doTaskThree() throws Exception;
+
+
+    List<UserEntity> findAsync( ) throws Exception;
 }
