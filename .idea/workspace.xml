@@ -2,39 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/UserServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/FeignFallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/FeignFallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/UserFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/UserFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/FeignFallBack.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/FeignFallBack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/UserFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-client/target/classes/com/cloud/client/user/feign/UserFeignClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-client/target/test-classes/com/cloud/client/CloudClientApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-two/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-two/src/main/java/com/cloud/provider/CloudProviderTwoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-two/src/main/java/com/cloud/provider/CloudProviderTwoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/CloudProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/CloudProviderApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/CloudProviderApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/CloudProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/CloudProviderApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/entity/User.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/MyFallbackProvider$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/MyFallbackProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/test-classes/com/cloud/zuul/CloudZuulApplicationTests.class" beforeDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,9 +52,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\Administrator\.m2\repository" />
-        <option name="mavenHome" value="D:/Program Files (x86)/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\Program Files (x86)\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="localRepository" value="E:\Maven\repository" />
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -98,10 +96,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cloud.provider" />
       <recent name="com.cloud.client.user.entity" />
       <recent name="com.cloud.provider.entity" />
       <recent name="com.cloud.provider.controller" />
@@ -130,29 +129,81 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CloudZuulApplication">
-    <configuration name="CloudDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.discovery.CloudDiscoveryApplication" />
-      <module name="cloud-discovery" />
+  <component name="RunManager">
+    <configuration name="UserControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cloud.discovery.*" />
+          <option name="PATTERN" value="com.cloud.provider.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cloud.provider" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CloudZuulApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.zuul.CloudZuulApplication" />
-      <module name="cloud-zuul" />
+    <configuration name="UserServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cloud.zuul.*" />
+          <option name="PATTERN" value="com.cloud.provider.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cloud.provider" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cloud.provider" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cloud.provider" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTests.testb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cloud.provider" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
+      <option name="METHOD_NAME" value="testb" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,17 +231,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CloudDiscoveryApplicationTwo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CloudDiscoveryApplicationTwo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-discovery-two" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.discovery.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.discovery.CloudDiscoveryApplicationTwo" />
-      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=server2" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -217,21 +260,26 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CloudDiscoveryApplication" />
       <item itemvalue="Spring Boot.CloudClientApplication" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplication" />
       <item itemvalue="Spring Boot.CloudProviderApplication" />
       <item itemvalue="Spring Boot.CloudProviderTwoApplication" />
       <item itemvalue="Spring Boot.CloudZuulApplication" />
       <item itemvalue="Spring Boot.CloudConifgApplication" />
+      <item itemvalue="JUnit.UserServiceTests.test1" />
+      <item itemvalue="JUnit.UserControllerTests" />
+      <item itemvalue="JUnit.UserServiceTests" />
+      <item itemvalue="JUnit.UserServiceTests.testb" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
-      <item itemvalue="Application.CloudZuulApplication" />
+      <item itemvalue="JUnit.UserServiceTests.test2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CloudZuulApplication" />
-        <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
-        <item itemvalue="Application.CloudDiscoveryApplication" />
+        <item itemvalue="JUnit.UserServiceTests.test1" />
+        <item itemvalue="JUnit.UserServiceTests.test2" />
+        <item itemvalue="JUnit.UserServiceTests.testb" />
+        <item itemvalue="JUnit.UserServiceTests" />
+        <item itemvalue="JUnit.UserControllerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -249,6 +297,7 @@
       <workItem from="1578138285544" duration="12256000" />
       <workItem from="1578301109266" duration="7250000" />
       <workItem from="1578366882826" duration="29545000" />
+      <workItem from="1578807346802" duration="11254000" />
     </task>
     <task id="LOCAL-00001" summary="忽略CSRF验证">
       <created>1578143939370</created>
@@ -285,7 +334,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578390907281</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="整合mybatis">
+      <created>1578723944305</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578723944305</updated>
+    </task>
+    <task id="LOCAL-00007" summary="改为老的驱动，否则有警告">
+      <created>1578816382364</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578816382365</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +373,9 @@
     <MESSAGE value="eureka集群" />
     <MESSAGE value="feign负载均衡实现" />
     <MESSAGE value="feign网关实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="feign网关实现" />
+    <MESSAGE value="整合mybatis" />
+    <MESSAGE value="改为老的驱动，否则有警告" />
+    <option name="LAST_COMMIT_MESSAGE" value="改为老的驱动，否则有警告" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578374793753">
