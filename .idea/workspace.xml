@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="自定义线程池，用spring提供的">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-discovery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-discovery/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/UserServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/UserServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578832370248</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="多线程学习二">
+      <created>1578980155852</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578980155852</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +368,8 @@
     <MESSAGE value="改为老的驱动，否则有警告" />
     <MESSAGE value="配置线程池" />
     <MESSAGE value="自定义线程池，用spring提供的" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义线程池，用spring提供的" />
+    <MESSAGE value="多线程学习二" />
+    <option name="LAST_COMMIT_MESSAGE" value="多线程学习二" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578374793753">
@@ -385,10 +384,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1578366054586" />
-    <state x="181" y="0" key="CommitChangelistDialog2" timestamp="1578978626952">
+    <state x="181" y="0" key="CommitChangelistDialog2" timestamp="1578980153343">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="181" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578978626952" />
+    <state x="181" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578980153343" />
     <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1578969899685">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -437,10 +436,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578969967982" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578390919950">
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578980193199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578390919950" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578980193199" />
     <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1578366896457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

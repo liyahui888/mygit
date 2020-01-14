@@ -1,0 +1,5 @@
+com\cloud\client\user\entity\UserEntity.class
+com\cloud\client\CloudClientApplication.class
+com\cloud\client\user\controller\UserController.class
+com\cloud\client\user\feign\FeignFallBack.class
+com\cloud\client\user\feign\UserFeignClient.class

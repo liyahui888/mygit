@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:7001/        #Config server的uri
+      profile: dev                       #指定的环境
+      label: master                      #指定分支
+
