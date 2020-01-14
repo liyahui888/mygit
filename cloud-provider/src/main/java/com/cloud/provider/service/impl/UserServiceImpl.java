@@ -4,14 +4,13 @@ import com.cloud.provider.entity.UserEntity;
 import com.cloud.provider.mapper.UserMapper;
 import com.cloud.provider.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.collect.Lists;
-import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.concurrent.ListenableFuture;
 
 import java.util.ArrayList;
@@ -36,17 +35,6 @@ public class UserServiceImpl implements UserService {
         return userMapper.getOne(id);
     }
 
-    @Async
-    @Override
-    public void testpool(int i) throws InterruptedException {
-        System.out.println("线程" + Thread.currentThread().getName() + " 执行异步任务：" + i);
-    }
-
-    @Override
-    public ListenableFuture<String> testpoolb(String name) {
-        String res = name + ":Hello World!";
-        return new AsyncResult<>(res);
-    }
 
     private  Random random = new Random();
 
@@ -78,41 +66,18 @@ public class UserServiceImpl implements UserService {
         return new AsyncResult<>("任务三完成");
     }
 
-    @Override
-    public List<UserEntity> findAsync() throws Exception {
-        int count = userMapper.count();
-        int pageSize = 10;
-        int pageCount = (count + pageSize - 1)/pageSize;
-        logger.info("共计：{}页，共计：{}条数据",pageCount,count);
-        List<UserEntity> resultList = new ArrayList<>();
-        BlockingQueue<Future<List<UserEntity>>> queue = new LinkedBlockingQueue();
-        for (int i = 1; i <= pageCount; i++) {
-            Thread.sleep(0);
-            Integer offset = (i - 1) * pageSize;
-            Future<List<UserEntity>> future = getData(offset, pageSize);
-            queue.add(future);
-            logger.info("当前线程：{}，查询第：{}页",Thread.currentThread().getName(),i);
-        }
-        int queueSize = queue.size();
-        logger.info("队列长度：{}",queueSize);
-        for (int i = 0; i < queueSize; i++) {
-            List<UserEntity> subAttendList = queue.take().get();
-            if (!CollectionUtils.isEmpty(subAttendList)) {
-                resultList.addAll(subAttendList);
-            }
-        }
-        return resultList;
-    }
-
     @Async
+    @Override
     public Future<List<UserEntity>> getData(Integer offset, Integer pageSize) throws Exception {
+        logger.info("当前线程：{}",Thread.currentThread().getId());
+        Thread.sleep(3000);
         List<UserEntity> list = userMapper.findByPage(offset, pageSize);
         return new AsyncResult<>(list);
     }
 
-    public  List testc() throws Exception{
+    public  List findAsyncB() throws Exception{
         int count = userMapper.count();
-        int pageSize = 10;
+        int pageSize = 2;
         int pageCount = (count + pageSize - 1)/pageSize;
         logger.info("共计：{}页，共计：{}条数据",pageCount,count);
         List data = new ArrayList<>();
@@ -123,7 +88,6 @@ public class UserServiceImpl implements UserService {
             Future<List> future = service.submit(getdt(offset, pageSize));
             ObjectMapper om = new ObjectMapper();
             String s = om.writeValueAsString(future.get());
-            logger.info("当前线程：{}，查询第：{}页，查询结果：{}",Thread.currentThread().getName(),i,s);
             queue.add(future);
         }
         int queueSize = queue.size();
@@ -138,6 +102,8 @@ public class UserServiceImpl implements UserService {
     private Callable<List> getdt(int offset,int pageSize) {
         Callable<List> callable = new Callable<List>() {
             public List call() throws Exception {
+                Thread.sleep(3000);
+                logger.info("当前线程：{}",Thread.currentThread().getId());
                 List<UserEntity> list = userMapper.findByPage(offset, pageSize);
                 return list;
             }

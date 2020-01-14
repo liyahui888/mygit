@@ -9,13 +9,8 @@ import java.util.concurrent.Future;
 public interface UserService {
 
     List<UserEntity> find();
-
+    List findAsyncB() throws Exception;
     UserEntity get(Long id);
-
-
-    void  testpool(int i) throws InterruptedException;
-
-    ListenableFuture<String> testpoolb(String name);
 
     Future<String> doTaskOne() throws Exception;
 
@@ -23,8 +18,5 @@ public interface UserService {
 
     Future<String> doTaskThree() throws Exception;
 
-
-    List<UserEntity> findAsync( ) throws Exception;
-
-    List testc() throws Exception;
+    Future<List<UserEntity>> getData(Integer offset, Integer pageSize) throws Exception;
 }

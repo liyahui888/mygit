@@ -20,24 +20,6 @@ class UserServiceTests {
     private UserService userService;
 
     @Test
-    public void test1() throws InterruptedException {
-
-        for (int i = 0; i <10;i++) {
-            userService.testpool(i);
-        }
-
-
-    }
-
-    @Test
-    public void testb() throws ExecutionException, InterruptedException {
-        ListenableFuture<String> future = userService.testpoolb("testbbbb");
-
-        logger.info("返回值：{}",future.get());
-    }
-
-
-    @Test
     public void test2() throws Exception {
         long start = System.currentTimeMillis();
          userService.doTaskOne();
@@ -45,6 +27,11 @@ class UserServiceTests {
          userService.doTaskThree();
         long end = System.currentTimeMillis();
         System.out.println("任务全部完成，总耗时：" + (end - start) + "毫秒");
+    }
+
+    @Test
+    public void testFindAsyncB() throws Exception {
+        userService.findAsyncB();
     }
 
 }
