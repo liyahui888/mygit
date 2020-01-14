@@ -4,12 +4,17 @@ import com.cloud.provider.entity.UserEntity;
 import org.springframework.util.concurrent.ListenableFuture;
 
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Future;
 
 public interface UserService {
 
     List<UserEntity> find();
+
     List findAsyncB() throws Exception;
+
+    List findAsyncC() throws Exception;
+
     UserEntity get(Long id);
 
     Future<String> doTaskOne() throws Exception;
@@ -17,6 +22,8 @@ public interface UserService {
     Future<String> doTaskTwo() throws Exception;
 
     Future<String> doTaskThree() throws Exception;
+
+    Future<Integer> saveAsyncA(List list) throws Exception;
 
     Future<List<UserEntity>> getData(Integer offset, Integer pageSize) throws Exception;
 }

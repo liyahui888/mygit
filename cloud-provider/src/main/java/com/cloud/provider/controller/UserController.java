@@ -1,7 +1,9 @@
 package com.cloud.provider.controller;
 
 import com.cloud.provider.entity.UserEntity;
+import com.cloud.provider.entity.UserSlaveEntity;
 import com.cloud.provider.mapper.UserMapper;
+import com.cloud.provider.mapper.UserSlaveMapper;
 import com.cloud.provider.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -10,14 +12,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSON;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.Future;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.*;
 
 @RestController
 public class UserController {
@@ -28,6 +29,9 @@ public class UserController {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private UserSlaveMapper userSlaveMapper;
 
     @GetMapping("/user/{id}")
     public UserEntity findById(@PathVariable Long id) {
@@ -62,6 +66,7 @@ public class UserController {
 
     @GetMapping("/findAsyncA")
     public List<UserEntity> findAsyncA() throws Exception {
+        logger.info("开始做任务");
         int count = userMapper.count();
         int pageSize = 2;
         int pageCount = (count + pageSize - 1)/pageSize;
@@ -82,17 +87,68 @@ public class UserController {
                 resultList.addAll(subAttendList);
             }
         }
-
-        logger.info("查询结果：{}", JSON.toJSONString(resultList));
+        logger.info("结束做任务：{}", JSON.toJSONString(resultList));
         return resultList;
     }
 
+    @GetMapping("/saveAsyncA")
+    public void saveAsyncA() throws Exception {
+        logger.info("开始做任务");
+        //1.准备数据
+        List list = userService.findAsyncC();
+        //2.分批保存
+        int count = list.size();
+        int pageSize = 5;
+        int m = count % pageSize;
+        int pageCount = m == 0 ? (count / pageSize) : (count / pageSize + 1);
+        logger.info("共计：{}页，共计：{}条数据",pageCount,count);
+        BlockingQueue<Future<Integer>> queue = new LinkedBlockingQueue();
+        if (pageCount > 0) {
+            userSlaveMapper.deleteAll();
+            for (int i = 1; i <= pageCount; i++) {
+                Thread.sleep(0);
+                List subList =null;
+                if (m == 0) {
+                    subList = list.subList((i - 1) * pageSize, pageSize * (i));
+                } else {
+                    if (i == pageCount) {
+                        subList = list.subList((i - 1) * pageSize, count);
+                    } else {
+                        subList = list.subList((i - 1) * pageSize, pageSize * (i));
+                    }
+                }
+                Future<Integer> future = userService.saveAsyncA(subList);
+                queue.add(future);
+            }
+            int queueSize = queue.size();
+            logger.info("队列长度：{}",queueSize);
+            Integer result=0;
+            for (int i = 0; i < queueSize; i++) {
+                result= result+ queue.take().get();
+            }
+            logger.info("结束做任务：{}", JSON.toJSONString(result));
+        }
+
+
+    }
+
+
     @GetMapping("/findAsyncB")
     public List<UserEntity> findAsyncB() throws Exception {
-        logger.info("异步查询接口");
-        List<UserEntity> user = userService.findAsyncB();
+        logger.info("开始做任务");
+        List<UserEntity> list = userService.findAsyncB();
+        logger.info("结束做任务：{}", JSON.toJSONString(list));
+        return list;
+    }
 
-        logger.info("查询结果：{}", JSON.toJSONString(user));
+    @GetMapping("/findAsyncC")
+    public List<UserEntity> findAsyncC() throws Exception {
+        logger.info("开始做任务");
+        List<UserEntity> user = userService.findAsyncC();
+        logger.info("结束做任务：{}", JSON.toJSONString(user));
         return user;
     }
+
+
+
 }

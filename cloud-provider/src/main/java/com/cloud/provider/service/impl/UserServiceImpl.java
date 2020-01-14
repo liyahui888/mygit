@@ -2,16 +2,14 @@ package com.cloud.provider.service.impl;
 
 import com.cloud.provider.entity.UserEntity;
 import com.cloud.provider.mapper.UserMapper;
+import com.cloud.provider.mapper.UserSlaveMapper;
 import com.cloud.provider.service.UserService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
-import org.springframework.util.concurrent.ListenableFuture;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +17,13 @@ import java.util.Random;
 import java.util.concurrent.*;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl<main> implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private UserSlaveMapper uerSlaveMapper;
+
     private static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Override
@@ -75,6 +76,16 @@ public class UserServiceImpl implements UserService {
         return new AsyncResult<>(list);
     }
 
+    @Async
+    @Override
+    public Future<Integer> saveAsyncA(List list) throws Exception {
+        logger.info("当前线程：{}",Thread.currentThread().getName());
+        Thread.sleep(3000);
+        int result=uerSlaveMapper.insertBatch(list);
+        return new AsyncResult<>(result);
+    }
+
+    @Override
     public  List findAsyncB() throws Exception{
         int count = userMapper.count();
         int pageSize = 2;
@@ -99,14 +110,40 @@ public class UserServiceImpl implements UserService {
 
     private Callable<List> getdt(int offset,int pageSize) {
         Callable<List> callable = new Callable<List>() {
+            @Override
             public List call() throws Exception {
                 Thread.sleep(3000);
-                logger.info("当前线程：{}",Thread.currentThread().getId());
+                logger.info("当前线程：{}",Thread.currentThread().getName());
                 List<UserEntity> list = userMapper.findByPage(offset, pageSize);
                 return list;
             }
         };
         return callable;
     }
+
+    @Override
+    public  List findAsyncC() throws Exception{
+        int count = userMapper.count();
+        int pageSize = 2;
+        int pageCount = (count + pageSize - 1)/pageSize;
+        logger.info("共计：{}页，共计：{}条数据",pageCount,count);
+        List data = new ArrayList<>();
+        List<FutureTask<List>> futureTasks = new ArrayList<FutureTask<List>>();
+        ExecutorService executorService  = Executors.newFixedThreadPool(5);
+        for (int i = 1; i <=pageCount; i++) {
+            Integer offset = (i - 1) * pageSize;
+            FutureTask<List> futureTask = new FutureTask<List>(getdt(offset, pageSize));
+            futureTasks.add(futureTask);
+            executorService.submit(futureTask);
+        }
+
+        for (FutureTask<List> futureTask : futureTasks) {
+            data.addAll(futureTask.get());
+        }
+        executorService.shutdown();
+        return  data;
+    }
+
+
 
 }

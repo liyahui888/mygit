@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cloud.provider.mapper.UserSlaveMapper" >
+    <resultMap id="BaseResultMap" type="com.cloud.provider.entity.UserSlaveEntity" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="INTEGER" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id, name, age
+    </sql>
+
+    <select id="getAll" resultMap="BaseResultMap"  >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM user_slave
+    </select>
+
+    <select id="findByPage" resultMap="BaseResultMap">
+        select * from user_slave
+        LIMIT #{offset},#{pageSize};
+    </select>
+
+    <select id="count" resultType="INTEGER">
+        select count(1) from user
+    </select>
+
+    <select id="getOne" parameterType="java.lang.Long" resultMap="BaseResultMap" >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM user_slave
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.cloud.provider.entity.UserSlaveEntity" >
+        INSERT INTO
+        user_slave
+        (name,age)
+        VALUES
+        (#{name}, #{age})
+    </insert>
+
+    <insert id="insertBatch">
+        INSERT INTO user_slave(name,age)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.name},#{item.age})
+        </foreach>
+    </insert>
+
+    <update id="update" parameterType="com.cloud.provider.entity.UserSlaveEntity" >
+        UPDATE
+        user_slave
+        SET
+        <if test="name != null">name = #{name},</if>
+        <if test="age != null">age = #{age},</if>
+        WHERE
+        id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="java.lang.Long" >
+        DELETE FROM
+        user_slave
+        WHERE
+        id =#{id}
+    </delete>
+
+    <delete id="deleteAll"  >
+        DELETE FROM
+        user_slave
+    </delete>
+</mapper>

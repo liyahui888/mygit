@@ -12,6 +12,7 @@ public interface UserMapper {
     List<UserEntity> findByPage(Integer offset, Integer pageSize);
     UserEntity getOne(Long id);
     void insert(UserEntity user);
+    void insertBatch(List<UserEntity> user);
     void update(UserEntity user);
     void delete(Long id);
     int count();
