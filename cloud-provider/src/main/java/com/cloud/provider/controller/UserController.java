@@ -73,8 +73,6 @@ public class UserController {
             Integer offset = (i - 1) * pageSize;
             Future<List<UserEntity>> future = userService.getData(offset, pageSize);
             queue.add(future);
-            ObjectMapper om = new ObjectMapper();
-            String s = om.writeValueAsString(future.get());
         }
         int queueSize = queue.size();
         logger.info("队列长度：{}",queueSize);

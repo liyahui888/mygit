@@ -86,8 +86,6 @@ public class UserServiceImpl implements UserService {
         for (int i = 1; i <=pageCount; i++) {
             Integer offset = (i - 1) * pageSize;
             Future<List> future = service.submit(getdt(offset, pageSize));
-            ObjectMapper om = new ObjectMapper();
-            String s = om.writeValueAsString(future.get());
             queue.add(future);
         }
         int queueSize = queue.size();
