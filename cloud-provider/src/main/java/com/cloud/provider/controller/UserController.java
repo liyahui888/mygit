@@ -1,9 +1,11 @@
 package com.cloud.provider.controller;
 
+import com.cloud.provider.entity.TicketEntity;
 import com.cloud.provider.entity.UserEntity;
 import com.cloud.provider.entity.UserSlaveEntity;
 import com.cloud.provider.mapper.UserMapper;
 import com.cloud.provider.mapper.UserSlaveMapper;
+import com.cloud.provider.service.ThreadTestService;
 import com.cloud.provider.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -32,6 +34,9 @@ public class UserController {
 
     @Autowired
     private UserSlaveMapper userSlaveMapper;
+
+    @Autowired
+    private ThreadTestService  threadTestService;
 
     @GetMapping("/user/{id}")
     public UserEntity findById(@PathVariable Long id) {
@@ -147,6 +152,17 @@ public class UserController {
         List<UserEntity> user = userService.findAsyncC();
         logger.info("结束做任务：{}", JSON.toJSONString(user));
         return user;
+    }
+
+    private int reqNum;
+
+    @GetMapping("/saleTicket")
+    public void buyTicket() throws Exception {
+        logger.info("开始做任务");
+        reqNum++;
+        TicketEntity ticketEntity = threadTestService.saleTicket(reqNum);
+        logger.info("结束做任务：{}", JSON.toJSONString(ticketEntity));
+
     }
 
 

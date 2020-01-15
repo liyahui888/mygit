@@ -144,6 +144,4 @@ public class UserServiceImpl<main> implements UserService {
         return  data;
     }
 
-
-
 }

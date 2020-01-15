@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab02fba2-caee-498e-8da7-dda6a94b4342" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/UserSlaveEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/mapper/UserSlaveMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/resources/mapper/UserSlaveMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/TicketEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/ThreadTestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/ThreadTestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/util/SaleTicketUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/ThreadTestServiceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/config/BeanConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/config/BeanConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/service/impl/UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/service/impl/UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/classes/com/cloud/provider/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cloud.provider.mapper" />
-      <recent name="com.cloud.provider.entity" />
       <recent name="com.cloud.provider" />
+      <recent name="com.cloud.provider.entity" />
+      <recent name="com.cloud.provider.service.impl" />
+      <recent name="com.cloud.provider.mapper" />
       <recent name="com.cloud.client.user.entity" />
-      <recent name="com.cloud.provider.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\IdeaProjects\spring-cloud\cloud-provider\src\main\resources\mapper" />
@@ -106,7 +98,20 @@
       <command value="mvn -U idea:idea compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudProviderApplication">
+  <component name="RunManager" selected="JUnit.ThreadTestServiceTests.testSaleTicket">
+    <configuration name="ThreadTestServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.service.impl.ThreadTestServiceImpl" />
+      <module name="cloud-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.provider.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cloud.provider.service.impl.UserServiceImpl" />
       <module name="cloud-provider" />
@@ -120,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThreadTestServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cloud-provider" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +134,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cloud.provider" />
-      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.ThreadTestServiceTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTestServiceTests.testSaleTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cloud.provider" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.ThreadTestServiceTests" />
+      <option name="METHOD_NAME" value="testSaleTicket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,38 +167,6 @@
       <option name="PACKAGE_NAME" value="com.cloud.provider" />
       <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
       <option name="METHOD_NAME" value="testFindAsyncA" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTests.testFindAsyncB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cloud-provider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.provider.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cloud.provider" />
-      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
-      <option name="METHOD_NAME" value="testFindAsyncB" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTests.testb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cloud-provider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.provider.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cloud.provider" />
-      <option name="MAIN_CLASS_NAME" value="com.cloud.provider.UserServiceTests" />
-      <option name="METHOD_NAME" value="testb" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,8 +225,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.UserServiceImpl" />
-      <item itemvalue="JUnit.UserServiceTests.testb" />
-      <item itemvalue="JUnit.UserServiceTests.test2" />
       <item itemvalue="Spring Boot.CloudClientApplication" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplication" />
       <item itemvalue="Spring Boot.CloudProviderApplication" />
@@ -247,15 +233,17 @@
       <item itemvalue="Spring Boot.CloudConifgApplication" />
       <item itemvalue="Spring Boot.CloudDiscoveryApplicationTwo" />
       <item itemvalue="JUnit.UserServiceTests.testFindAsyncA" />
-      <item itemvalue="JUnit.UserServiceTests.testFindAsyncB" />
+      <item itemvalue="Application.ThreadTestServiceImpl" />
+      <item itemvalue="JUnit.ThreadTestServiceTests.testSaleTicket" />
+      <item itemvalue="JUnit.ThreadTestServiceTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThreadTestServiceTests.testSaleTicket" />
+        <item itemvalue="JUnit.ThreadTestServiceTests" />
+        <item itemvalue="Application.ThreadTestServiceImpl" />
         <item itemvalue="Application.UserServiceImpl" />
         <item itemvalue="JUnit.UserServiceTests.testFindAsyncA" />
-        <item itemvalue="JUnit.UserServiceTests.testFindAsyncB" />
-        <item itemvalue="JUnit.UserServiceTests.test2" />
-        <item itemvalue="JUnit.UserServiceTests.testb" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578981084315</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="多线程学习二">
+      <created>1578996719349</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578996719349</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,54 +403,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1578374793753" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1578977662529">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1579059406722">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578977662529" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579059406722" />
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578366054586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1578366054586" />
-    <state x="181" y="0" key="CommitChangelistDialog2" timestamp="1578981082514">
+    <state x="181" y="0" key="CommitChangelistDialog2" timestamp="1578996714858">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="181" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578981082514" />
+    <state x="181" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578996714858" />
     <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1578969899685">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578969899685" />
-    <state width="1322" height="143" key="GridCell.Tab.0.bottom" timestamp="1578996548690">
+    <state width="1322" height="190" key="GridCell.Tab.0.bottom" timestamp="1579062785228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578996548690" />
-    <state width="1322" height="143" key="GridCell.Tab.0.center" timestamp="1578996548690">
+    <state width="1322" height="190" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579062785228" />
+    <state width="1322" height="190" key="GridCell.Tab.0.center" timestamp="1579062785227">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578996548690" />
-    <state width="1322" height="143" key="GridCell.Tab.0.left" timestamp="1578996548690">
+    <state width="1322" height="190" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579062785227" />
+    <state width="1322" height="190" key="GridCell.Tab.0.left" timestamp="1579062785227">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578996548690" />
-    <state width="1322" height="143" key="GridCell.Tab.0.right" timestamp="1578996548690">
+    <state width="1322" height="190" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579062785227" />
+    <state width="1322" height="190" key="GridCell.Tab.0.right" timestamp="1579062785227">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578996548690" />
-    <state width="1322" height="143" key="GridCell.Tab.1.bottom" timestamp="1578996548691">
+    <state width="1322" height="190" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579062785227" />
+    <state width="1322" height="367" key="GridCell.Tab.1.bottom" timestamp="1579055392483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578996548691" />
-    <state width="1322" height="143" key="GridCell.Tab.1.center" timestamp="1578996548691">
+    <state width="1322" height="367" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579055392483" />
+    <state width="1322" height="367" key="GridCell.Tab.1.center" timestamp="1579055392483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578996548691" />
-    <state width="1322" height="143" key="GridCell.Tab.1.left" timestamp="1578996548691">
+    <state width="1322" height="367" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579055392483" />
+    <state width="1322" height="367" key="GridCell.Tab.1.left" timestamp="1579055392482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578996548691" />
-    <state width="1322" height="143" key="GridCell.Tab.1.right" timestamp="1578996548691">
+    <state width="1322" height="367" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579055392482" />
+    <state width="1322" height="367" key="GridCell.Tab.1.right" timestamp="1579055392483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="143" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578996548691" />
+    <state width="1322" height="367" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579055392483" />
     <state x="213" y="21" key="Maven.ArtifactSearchDialog" timestamp="1578969565498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -472,18 +467,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="404" y="94" width="549" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1578992985663" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578982182359">
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578996721954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578982182359" />
-    <state x="-18" y="102" width="1182" height="699" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578994256792">
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578996721954" />
+    <state x="-18" y="102" width="1182" height="699" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579052577730">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-18" y="102" width="1182" height="699" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1578994256792" />
+    <state x="-18" y="102" width="1182" height="699" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1579052577730" />
     <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1578366896457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578366896457" />
+    <state x="413" y="136" width="540" height="464" key="extract.method.dialog" timestamp="1579056587240">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="136" width="540" height="464" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1579056587240" />
     <state x="382" y="165" key="git4idea.merge.GitPullDialog" timestamp="1578968980010">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -496,5 +495,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="104" y="61" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1578392604946" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1579062762707">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579062762707" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/cloud-provider/src/test/java/com/cloud/provider/ThreadTestServiceTests.java</url>
+          <line>15</line>
+          <properties field="logger" class="com.cloud.provider.ThreadTestServiceTests" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
